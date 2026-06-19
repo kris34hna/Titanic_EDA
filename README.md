@@ -50,82 +50,37 @@ Key Columns:
 
 # Methods
 
--1.  Initial Inspection — Checked shape, data types, unique value counts, duplicates, missing value percentages, and descriptive statistics (numeric & categorical).
--2.  Categorical & Numerical Split — Separated columns into cat_cols (Survived, Pclass, Sex, SibSp, Parch, Embarked) and num_cols (Age, Fare) for targeted analysis.
--3.  Survival Overview — Countplot and grouped aggregation to determine overall survival counts and rate.
--4.  Gender-Based Survival — Pie charts comparing survival proportions between male and female passengers.
--5.  Pairplot Analysis — Full pairwise relationships across numeric variables, colored by gender.
--6.  Embarkation Analysis — Multi-panel plots examining passenger counts and survival by embarkation port.
--7.  Family Size Analysis (SibSp & Parch) — Bar plots of survival rate against number of siblings/spouses and parents/children aboard.
--8.  Correlation Matrix — Heatmap of all numeric variables to identify relationships with survival.
--9.  Age Distribution — Displot (histogram + KDE + rug) split by gender and survival status.
--10. Feature Engineering — Life Stage — Created a new LifeStage column bucketing passengers into Infant, Toddler, Child, Teen, and other age groups for deeper survival analysis.
+-1.  Initial Inspection — Checked shape, data types, unique value counts, duplicates, missing value percentages, and descriptive statistics (numeric & categorical). 
+-2.  Categorical & Numerical Split — Separated columns into cat_cols (Survived, Pclass, Sex, SibSp, Parch, Embarked) and num_cols (Age, Fare) for targeted analysis. 
+-3.  Survival Overview — Countplot and grouped aggregation to determine overall survival counts and rate. 
+-4.  Gender-Based Survival — Pie charts comparing survival proportions between male and female passengers. 
+-5.  Pairplot Analysis — Full pairwise relationships across numeric variables, colored by gender. 
+-6.  Embarkation Analysis — Multi-panel plots examining passenger counts and survival by embarkation port. 
+-7.  Family Size Analysis (SibSp & Parch) — Bar plots of survival rate against number of siblings/spouses and parents/children aboard. 
+-8.  Correlation Matrix — Heatmap of all numeric variables to identify relationships with survival. 
+-9.  Age Distribution — Displot (histogram + KDE + rug) split by gender and survival status. 
+-10. Feature Engineering — Life Stage — Created a new LifeStage column bucketing passengers into Infant, Toddler, Child, Teen, and other age groups for deeper survival analysis. 
 
+---
 
+# Key Insights
 
-💡 Key Insights
+-- The dataset shows a clear survival imbalance — fewer passengers survived than perished, consistent with the historical death toll.
+-- Gender was a major survival factor — the pie chart breakdown shows a stark contrast between male and female survival proportions, reflecting the "women and children first" evacuation protocol.
+-- Embarkation port shows uneven passenger distribution, with Southampton (S) contributing the largest share of passengers.
+-- Family size mattered — survival rate trends differ across SibSp and Parch values, suggesting passengers with small families had different survival odds than those traveling alone or in large groups.
+-- The correlation heatmap highlights relationships between Pclass, Fare, and Survived — passenger class and fare are meaningful numeric predictors of survival.
+-- The Age distribution split by survival and gender reveals different age profiles among survivors vs. non-survivors.
+-- The custom LifeStage feature (Infant, Toddler, Child, Teen, etc.) enables a more granular look at how survival varied not just by raw age, but by life-stage category.
 
+---
 
-🛟 The dataset shows a clear survival imbalance — fewer passengers survived than perished, consistent with the historical death toll.
-👩‍🦰👨 Gender was a major survival factor — the pie chart breakdown shows a stark contrast between male and female survival proportions, reflecting the "women and children first" evacuation protocol.
-⚓ Embarkation port shows uneven passenger distribution, with Southampton (S) contributing the largest share of passengers.
-👨‍👩‍👧 Family size mattered — survival rate trends differ across SibSp and Parch values, suggesting passengers with small families had different survival odds than those traveling alone or in large groups.
-📈 The correlation heatmap highlights relationships between Pclass, Fare, and Survived — passenger class and fare are meaningful numeric predictors of survival.
-👶 The Age distribution split by survival and gender reveals different age profiles among survivors vs. non-survivors.
-🧒 The custom LifeStage feature (Infant, Toddler, Child, Teen, etc.) enables a more granular look at how survival varied not just by raw age, but by life-stage category.
+# Author & Contact
 
-
-
-📊 Dashboard / Output
-
-This project's output is the Jupyter Notebook (Titanic.ipynb) containing:
-
-
-Survival count plots & grouped survival rate
-Gender-based survival pie charts
-Full pairplot colored by gender
-Embarkation port analysis (4-panel visualization)
-Family size (SibSp/Parch) vs. survival bar plots
-Correlation matrix heatmap
-Age distribution displot (by gender & survival)
-Life Stage feature engineering & analysis
-
-
-
-▶️ How to Run This Project
-
-bash# 1. Clone the repository
-git clone <your-repo-url>
-cd titanic-eda
-
-# 2. Install dependencies
-pip install numpy pandas matplotlib seaborn jupyter
-
-# 3. Launch the notebook
-jupyter notebook Titanic.ipynb
-
-# 4. Ensure train.csv is in the same directory before running
-
-
-✅ Results & Conclusion
-
-This EDA confirms several well-known patterns from the Titanic disaster — survival was strongly influenced by gender, passenger class, and family configuration, with women, higher-class passengers, and those in small family groups generally faring better. Age and life-stage analysis further reveals that children had different survival dynamics compared to adults. These insights lay a strong foundation for predictive modeling on survival outcomes.
-
-
-🔮 Future Work
-
-
-🤖 Build a survival prediction model (Logistic Regression, Random Forest, XGBoost)
-🧹 Handle missing values in Age, Cabin, and Embarked with imputation strategies
-🔤 Engineer new features from Name (titles like Mr./Mrs./Master) and Cabin (deck level)
-📊 Perform feature importance analysis to rank top survival predictors
-🌐 Deploy the model as an interactive "Would I have survived?" web app
-
-
-
-👤 Author & Contact
-
-Name(Your Name)LinkedIn(your-linkedin-url)GitHub(your-github-username)Email(your-email@example.com)
+|Name | KRISIHNA |
+|-----|------------|
+|LinkedIn | https://www.linkedin.com/in/krishna-krishna-26a106231/ |
+|GitHub | https://github.com/ |
 
 
 ⭐ If you found this project helpful, consider giving it a star!

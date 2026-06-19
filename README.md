@@ -50,16 +50,16 @@ Key Columns:
 
 # Methods
 
--1  Initial Inspection — Checked shape, data types, unique value counts, duplicates, missing value percentages, and descriptive statistics (numeric & categorical).
--2  Categorical & Numerical Split — Separated columns into cat_cols (Survived, Pclass, Sex, SibSp, Parch, Embarked) and num_cols (Age, Fare) for targeted analysis.
--3  Survival Overview — Countplot and grouped aggregation to determine overall survival counts and rate.
--4  Gender-Based Survival — Pie charts comparing survival proportions between male and female passengers.
--5  Pairplot Analysis — Full pairwise relationships across numeric variables, colored by gender.
--6  Embarkation Analysis — Multi-panel plots examining passenger counts and survival by embarkation port.
--7  Family Size Analysis (SibSp & Parch) — Bar plots of survival rate against number of siblings/spouses and parents/children aboard.
--8  Correlation Matrix — Heatmap of all numeric variables to identify relationships with survival.
--9  Age Distribution — Displot (histogram + KDE + rug) split by gender and survival status.
--10 Feature Engineering — Life Stage — Created a new LifeStage column bucketing passengers into Infant, Toddler, Child, Teen, and other age groups for deeper survival analysis.
+-1.  Initial Inspection — Checked shape, data types, unique value counts, duplicates, missing value percentages, and descriptive statistics (numeric & categorical).
+-2.  Categorical & Numerical Split — Separated columns into cat_cols (Survived, Pclass, Sex, SibSp, Parch, Embarked) and num_cols (Age, Fare) for targeted analysis.
+-3.  Survival Overview — Countplot and grouped aggregation to determine overall survival counts and rate.
+-4.  Gender-Based Survival — Pie charts comparing survival proportions between male and female passengers.
+-5.  Pairplot Analysis — Full pairwise relationships across numeric variables, colored by gender.
+-6.  Embarkation Analysis — Multi-panel plots examining passenger counts and survival by embarkation port.
+-7.  Family Size Analysis (SibSp & Parch) — Bar plots of survival rate against number of siblings/spouses and parents/children aboard.
+-8.  Correlation Matrix — Heatmap of all numeric variables to identify relationships with survival.
+-9.  Age Distribution — Displot (histogram + KDE + rug) split by gender and survival status.
+-10. Feature Engineering — Life Stage — Created a new LifeStage column bucketing passengers into Infant, Toddler, Child, Teen, and other age groups for deeper survival analysis.
 
 
 

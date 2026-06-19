@@ -50,28 +50,28 @@ Key Columns:
 
 # Methods
 
--1.  Initial Inspection — Checked shape, data types, unique value counts, duplicates, missing value percentages, and descriptive statistics (numeric & categorical). 
--2.  Categorical & Numerical Split — Separated columns into cat_cols (Survived, Pclass, Sex, SibSp, Parch, Embarked) and num_cols (Age, Fare) for targeted analysis. 
--3.  Survival Overview — Countplot and grouped aggregation to determine overall survival counts and rate. 
--4.  Gender-Based Survival — Pie charts comparing survival proportions between male and female passengers. 
--5.  Pairplot Analysis — Full pairwise relationships across numeric variables, colored by gender. 
--6.  Embarkation Analysis — Multi-panel plots examining passenger counts and survival by embarkation port. 
--7.  Family Size Analysis (SibSp & Parch) — Bar plots of survival rate against number of siblings/spouses and parents/children aboard. 
--8.  Correlation Matrix — Heatmap of all numeric variables to identify relationships with survival. 
--9.  Age Distribution — Displot (histogram + KDE + rug) split by gender and survival status. 
--10. Feature Engineering — Life Stage — Created a new LifeStage column bucketing passengers into Infant, Toddler, Child, Teen, and other age groups for deeper survival analysis. 
+1.  Initial Inspection — Checked shape, data types, unique value counts, duplicates, missing value percentages, and descriptive statistics (numeric & categorical). 
+2.  Categorical & Numerical Split — Separated columns into cat_cols (Survived, Pclass, Sex, SibSp, Parch, Embarked) and num_cols (Age, Fare) for targeted analysis. 
+3.  Survival Overview — Countplot and grouped aggregation to determine overall survival counts and rate. 
+4.  Gender-Based Survival — Pie charts comparing survival proportions between male and female passengers. 
+5.  Pairplot Analysis — Full pairwise relationships across numeric variables, colored by gender. 
+6.  Embarkation Analysis — Multi-panel plots examining passenger counts and survival by embarkation port. 
+7.  Family Size Analysis (SibSp & Parch) — Bar plots of survival rate against number of siblings/spouses and parents/children aboard. 
+8.  Correlation Matrix — Heatmap of all numeric variables to identify relationships with survival. 
+9.  Age Distribution — Displot (histogram + KDE + rug) split by gender and survival status. 
+10. Feature Engineering — Life Stage — Created a new LifeStage column bucketing passengers into Infant, Toddler, Child, Teen, and other age groups for deeper survival analysis. 
 
 ---
 
 # Key Insights
 
--- The dataset shows a clear survival imbalance — fewer passengers survived than perished, consistent with the historical death toll.
--- Gender was a major survival factor — the pie chart breakdown shows a stark contrast between male and female survival proportions, reflecting the "women and children first" evacuation protocol.
--- Embarkation port shows uneven passenger distribution, with Southampton (S) contributing the largest share of passengers.
--- Family size mattered — survival rate trends differ across SibSp and Parch values, suggesting passengers with small families had different survival odds than those traveling alone or in large groups.
--- The correlation heatmap highlights relationships between Pclass, Fare, and Survived — passenger class and fare are meaningful numeric predictors of survival.
--- The Age distribution split by survival and gender reveals different age profiles among survivors vs. non-survivors.
--- The custom LifeStage feature (Infant, Toddler, Child, Teen, etc.) enables a more granular look at how survival varied not just by raw age, but by life-stage category.
+- The dataset shows a clear survival imbalance — fewer passengers survived than perished, consistent with the historical death toll.
+ Gender was a major survival factor — the pie chart breakdown shows a stark contrast between male and female survival proportions, reflecting the "women and children first" evacuation protocol.
+- Embarkation port shows uneven passenger distribution, with Southampton (S) contributing the largest share of passengers.
+- Family size mattered — survival rate trends differ across SibSp and Parch values, suggesting passengers with small families had different survival odds than those traveling alone or in large groups.
+- The correlation heatmap highlights relationships between Pclass, Fare, and Survived — passenger class and fare are meaningful numeric predictors of survival.
+- The Age distribution split by survival and gender reveals different age profiles among survivors vs. non-survivors.
+- The custom LifeStage feature (Infant, Toddler, Child, Teen, etc.) enables a more granular look at how survival varied not just by raw age, but by life-stage category.
 
 ---
 
